@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 25px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      flex-shrink: 0;
+    }
+
+    .header-text {
+      text-align: left;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .header-text p {
+      margin-top: 8px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      align-items: stretch;
+    }
+
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: #ddd;
+      display: block;
+    }
+
+    .fallback {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="resources/Page.png" alt="Profile Photo">
+    <div class="header-text">
+      <h1>Eduardo, Jr. L. Arienza</h1>
+      <p>Aspiring Developer | Designer | Tech Enthusiast</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am passionate about technology and design. Skilled in basic programming, 
+      photo editing, and video editing. I enjoy creating projects that combine 
+      creativity with functionality. Currently improving my skills in web 
+      development and project design.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming (Basic knowledge)</li>
+      <li>Photo Editing</li>
+      <li>Video Editing</li>
+      <li>Web Development Basics</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="resources/project1.png" alt="Photo Design Project1" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
+        <h3>Photo Design Project</h3>
+        <p>A creative photo editing design showcasing my editing skills.</p>
+      </div>
+      <div class="project">
+        <img src="resources/project2.png" alt="Portfolio Website" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
+        <h3>Portfolio Website</h3>
+        <p>A personal website built with HTML and CSS to showcase my work.</p>
+      </div>
+      <div class="project">
+        <img src="resources/project3.png" alt="Programming Practice" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
+        <h3>Programming Practice</h3>
+        <p>Small coding projects where I practice and improve my skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: eduardoarienza@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Hxhjunfreecs" target="_blank">https://github.com/Hxhjunfreecs</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Eduardo Jr. L. Arienza | Built with HTML & CSS</p>
+  </footer>
+</body>
+</html>
