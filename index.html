@@ -83,6 +83,22 @@
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
+      background: #ddd;
+      display: block;
+    }
+
+    .fallback {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 14px;
+      font-style: italic;
     }
 
     ul {
@@ -107,7 +123,7 @@
   <header>
     <img src="resources/Page.png" alt="Profile Photo">
     <div class="header-text">
-      <h1>Eduardo,Jr. L. Arienza</h1>
+      <h1>Eduardo, Jr. L. Arienza</h1>
       <p>Aspiring Developer | Designer | Tech Enthusiast</p>
     </div>
   </header>
@@ -136,15 +152,17 @@
     <h2>Projects</h2>
     <div class="projects">
       <div class="project">
-        <img src="resources/project1.png" alt="Photo Design Project">
+        <img src="resources/project1.png" alt="Photo Design Project1" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
         <h3>Photo Design Project</h3>
         <p>A creative photo editing design showcasing my editing skills.</p>
       </div>
       <div class="project">
+        <img src="resources/project2.png" alt="Portfolio Website" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
         <h3>Portfolio Website</h3>
         <p>A personal website built with HTML and CSS to showcase my work.</p>
       </div>
       <div class="project">
+        <img src="resources/project3.png" alt="Programming Practice" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=\'fallback\'>Image not found</div>')">
         <h3>Programming Practice</h3>
         <p>Small coding projects where I practice and improve my skills.</p>
       </div>
@@ -158,7 +176,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Your Name | Built with HTML & CSS</p>
+    <p>© 2025 Eduardo Jr. L. Arienza | Built with HTML & CSS</p>
   </footer>
 </body>
 </html>
